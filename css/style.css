@@ -1,3 +1,12 @@
+body {
+    margin : 0;
+    background-image: "4.jpg";
+}
 .hidden {
     display: none;
+}
+
+img{
+    width : 100vw;
+    height : 100vh;
 }

@@ -1,0 +1,15 @@
+body {
+    margin : 0;    
+    
+}
+
+body h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+body p {
+    
+    justify-content: center;
+    
+}

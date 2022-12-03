@@ -25,6 +25,5 @@ if (savedName == null) {
     loginForm.classList.add(HIDDEN_CLASS_NAME)
 }
 
-const 
 
 // userName : '이원준'

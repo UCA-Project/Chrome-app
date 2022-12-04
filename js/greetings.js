@@ -10,6 +10,7 @@ let logoutBtn = document.querySelector("#logout-button")
 if(userName != null) {
     greeting.innerText = `안녕하세요, ${userName}님!`
     loginForm.classList.add("hidden")
+    logoutBtn.classList.remove("hidden")
 } else {
     function onLoginSubmit(e) {
         let name = loginInput.value
@@ -18,14 +19,17 @@ if(userName != null) {
         greeting.innerText = `안녕하세요, ${name}님!`
         loginForm.classList.add("hidden")
         localStorage.setItem("userName", name)
+        logoutBtn.classList.remove("hidden")
     }
     loginForm.addEventListener("submit", onLoginSubmit)
 }
 
 logoutBtn.addEventListener("click", LGOUT)
-if(userName != null) {
-    logoutBtn.classList.remove("hidden")
+
+if(userName == null){
+    logoutBtn.classList.add("hidden") //
 }
+
 function LGOUT(f) {
     console.log("!")
     if(confirm("로그아웃 하시겠습니까?")){

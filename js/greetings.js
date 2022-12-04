@@ -20,18 +20,18 @@ if(userName != null) {
         localStorage.setItem("userName", name)
     }
     loginForm.addEventListener("submit", onLoginSubmit)
-    logoutBtn.classList.add("hidden")
 }
 
 logoutBtn.addEventListener("click", LGOUT)
 if(userName != null) {
     logoutBtn.classList.remove("hidden")
-    function LGOUT(f) {
-        f.preventDefault()
-        if(prompt("로그아웃 하시겠습니까?") == "yes"){
-            localStorage.clearItem("userName")
-            logoutBtn.classList.add("hidden")
-        }
+}
+function LGOUT(f) {
+    console.log("!")
+    if(confirm("로그아웃 하시겠습니까?")){
+        localStorage.removeItem("userName")
+        logoutBtn.classList.add("hidden")
+        location.reload(true)
     }
 }
 

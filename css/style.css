@@ -6,10 +6,34 @@ body {
 body h1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    
     
 }
-body p {
-    
+#quote {
+    display: flex;
     justify-content: center;
     
+}
+#author {
+    display: flex;
+    justify-content: center;
+}
+#welcome {
+    display: flex;
+    justify-content: end;
+}
+body form {
+    display: flex;
+    justify-content: end;
+}
+.hidden {
+    display: none;
+}
+#logout {
+    display: flex;
+    justify-content: end;
+}
+.hidden1 {
+    display: none;
 }

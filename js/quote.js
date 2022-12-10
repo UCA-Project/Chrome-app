@@ -11,12 +11,8 @@ let quotes = [
         author: "DEFT"
     },
     {
-        quote: "오늘 하루도 수고했어",
-        author: "w.j LEE"
-    },
-    {
-        quote: "Hype Boy",
-        author: "NEWjeans"
+        quote: "저기 저...",
+        author: "뉴진스의 HYPE BOY요!"
     }
 ]
 let randomNumber = Math.floor(Math.random() * quotes.length)

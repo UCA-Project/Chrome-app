@@ -6,14 +6,12 @@ let images = [
     "5.jpg"
 ]
 
-let bgImage = document.createElement('img')
+let bgImage = document.querySelector('div')
 
 let chosenImage = images[Math.floor(Math.random() * images.length)]
 console.log(chosenImage)
-bgImage.src = `./img/${chosenImage}` //"./img/1.jpg"
-bgImage.style = "width:100px;height:100px;"
-
-document.body.appendChild(bgImage)
+let src = `./img/${chosenImage}` //"./img/1.jpg"
+bgImage.style = `width:100vw;height:100vh;background:url(${src})`
 
 console.log(bgImage)
 /*

@@ -5,3 +5,14 @@
 .hidden {
     display: none;
 }
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
